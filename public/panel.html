@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="icon" type="image/png" href="./static/numecodiag-logo-48x48.png" />
+		<link rel="stylesheet" href="./assets/app.css" />
+		<title>NumÉcoDiag DevTools Panel</title>
+		<script defer type="module" src="./assets/app.js"></script>
+		<style>
+			/* Skip link styles */
+			.skip-link {
+				position: absolute;
+				top: -40px;
+				left: 6px;
+				background: #000091;
+				color: white;
+				padding: 8px;
+				text-decoration: none;
+				z-index: 1000;
+				border-radius: 0 0 4px 4px;
+				font-weight: bold;
+			}
+			.skip-link:focus {
+				top: 0;
+			}
+
+			/* DevTools panel specific adjustments */
+			body {
+				margin: 0;
+				padding: 0;
+				overflow-x: hidden;
+			}
+
+			/* Ensure the app fits well in the DevTools panel */
+			#app,
+			.main-container {
+				max-height: 100vh;
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- The entire NumÉcoDiag Svelte app will be mounted here -->
+	</body>
+</html>

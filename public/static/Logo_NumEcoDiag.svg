@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57.52 56.46">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-2 {
+        stroke: #293273;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4.5px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-1" points="56.6 .92 8.44 48.48 7.7 48.48 7.7 0 56.6 0 56.6 .92"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polygon class="cls-1" points="56.6 .92 8.44 48.48 8.43 49.22 56.9 49.83 57.52 .93 56.6 .92"/>
+    </clipPath>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <g id="_Répétition_miroir_" data-name="&amp;lt;Répétition miroir&amp;gt;">
+          <g class="cls-4">
+            <path class="cls-2" d="M10.95,46.23c-2-16.29-1.74-26.75,7.89-35.97C28.26,1.25,40.27,1.16,54.35,3.64"/>
+          </g>
+        </g>
+        <g id="_Répétition_miroir_-2" data-name="&amp;lt;Répétition miroir&amp;gt;">
+          <g class="cls-3">
+            <path class="cls-2" d="M10.72,46c16.27,2.21,26.72,2.08,36.06-7.44,9.13-9.31,9.37-21.31,7.07-35.42"/>
+          </g>
+        </g>
+      </g>
+      <line class="cls-2" x1="2.25" y1="54.21" x2="11.11" y2="45.99"/>
+      <path class="cls-2" d="M20.22,24.91c2.42,2.87,5.61,6.82,8.04,9.69,4.83-5.95,10.8-13.6,15.63-19.55"/>
+    </g>
+  </g>
+</svg>

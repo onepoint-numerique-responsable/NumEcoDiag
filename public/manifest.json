@@ -1,26 +1,22 @@
 {
-	"manifest_version" : 2,
+	"manifest_version": 3,
 	"name": "NumÉcoDiag",
 	"description": "Cette WebExtension développée et mise à disposition gratuitement par la MiNumEco facilite l'auto-diagnostic de l’écoconception d’un service numérique, conformément au Référentiel Général d'Écoconception de Services Numériques (RGESN)",
+	  "browser_specific_settings": {
+    "gecko": {
+      "id": "green-initiatives@groupeonepoint.com"
+    }
+  },
 	"version": "1.0.3",
 	"icons": {
 		"16": "./static/numecodiag-logo-16x16.png",
 		"48": "./static/numecodiag-logo-48x48.png",
 		"128": "./static/numecodiag-logo-128x128.png"
 	},
-	"browser_action": {
-		"default_icon": "./static/numecodiag-logo-48x48.png",
-		"default_popup": "./index.html",
-		"default_title": "NumÉcoDiag"
-	},
-	"commands": {
-		"_execute_browser_action": {
-			"suggested_key": {
-				"default": "Alt+Shift+D"
-			}
-		}
-	},
-	"permissions": [
-		"storage"
-	]
+	"devtools_page": "devtools.html",
+	"web_accessible_resources": [{
+		"resources": ["assets/*", "static/*", "rgesn/*"],
+		"matches": ["<all_urls>"]
+	}],
+	"permissions": ["storage"]
 }

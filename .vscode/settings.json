@@ -1,0 +1,4 @@
+{
+	"github-enterprise.uri": "https://gitlab.groupeonepoint.com",
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"]
+}

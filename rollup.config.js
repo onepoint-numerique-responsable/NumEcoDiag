@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import babel from '@rollup/plugin-babel';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -17,7 +18,7 @@ function serve() {
 	return {
 		writeBundle() {
 			if (server) return;
-			server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
+			server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev', '--single'], {
 				stdio: ['ignore', 'inherit', 'inherit'],
 				shell: true
 			});
@@ -39,8 +40,11 @@ export default {
 	plugins: [
 		svelte({
 			compilerOptions: {
-				// enable run-time checks when not in production
-				dev: !production
+				dev: !production,
+				css: 'external',
+				compatibility: {
+					componentApi: 4
+				}
 			}
 		}),
 		// we'll extract any component CSS out into
@@ -57,6 +61,26 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+		// Ajout du plugin babel pour assurer la compatibilité avec les navigateurs cibles
+		babel({
+			babelHelpers: 'bundled',
+			exclude: ['node_modules/@babel/**', 'node_modules/core-js/**'],
+			presets: [
+				[
+					'@babel/preset-env',
+					{
+						targets: {
+							chrome: '80',
+							firefox: '72',
+							safari: '13.1',
+							edge: '80'
+						},
+						useBuiltIns: 'usage',
+						corejs: 3
+					}
+				]
+			]
+		}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
@@ -72,5 +96,9 @@ export default {
 	],
 	watch: {
 		clearScreen: false
+	},
+	onwarn(warning, warn) {
+		if (warning.code === 'CIRCULAR_DEPENDENCY') return;
+		warn(warning);
 	}
 };

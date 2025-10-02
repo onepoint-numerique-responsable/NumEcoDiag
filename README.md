@@ -12,7 +12,7 @@ Réalisation : [Pôle écoconception Temesis](https://www.temesis.com/).
 Cette extension est distribuée sous licence EUPL v1.2.
 
 Le code source complet de cette extension est disponible sur GitHub :  
-[https://github.com/onepoint-numerique-responsable/num-eco-diag](https://github.com/onepoint-numerique-responsable/num-eco-diag)
+[https://github.com/onepoint-numerique-responsable/NumEcoDiag](https://github.com/onepoint-numerique-responsable/NumEcoDiag)
 
 ## Installation
 

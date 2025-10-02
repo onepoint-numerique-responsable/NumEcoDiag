@@ -16,9 +16,9 @@ Le code source complet de cette extension est disponible sur GitHub :
 
 ## Installation
 
-- [Firefox](https://addons.mozilla.org/fr/firefox/addon/num%C3%A9codiag/)
-- [Chrome](https://chrome.google.com/webstore/detail/num%C3%A9codiag/fhdeahmddgflanbgilcglipaeofmcabc)
-- Edge (à venir, utiliser en attendant l'extension [Chrome](https://chrome.google.com/webstore/detail/num%C3%A9codiag/fhdeahmddgflanbgilcglipaeofmcabc))
+- [Firefox](https://addons.mozilla.org/fr/firefox/addon/numecodiag-rgesn2024/)
+- Chrome (à venir, utiliser en attendant l'extension [Firefox](https://addons.mozilla.org/fr/firefox/addon/numecodiag-rgesn2024/))
+- Edge (à venir, utiliser en attendant l'extension [Firefox](https://addons.mozilla.org/fr/firefox/addon/numecodiag-rgesn2024/))
 
 ## Installation manuelle
 
